@@ -1,0 +1,55 @@
+/* Styles shared by several components: action buttons and page sections. */
+.start,
+.secondary {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.start {
+  min-width: 160px;
+  color: #ffffff;
+  background: #538d4e;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 18px;
+  font-size: 1rem;
+}
+
+.secondary {
+  min-width: 160px;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #3a3a3c;
+  border-radius: 4px;
+  padding: 12px 18px;
+  font-size: 1rem;
+}
+
+.start:disabled,
+.secondary:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
+.start:hover:not(:disabled) {
+  filter: brightness(1.08);
+}
+
+.secondary:hover:not(:disabled),
+.secondary:focus-visible {
+  border-color: #d7dadc;
+}
+
+.status-line,
+.setup p {
+  margin: 0;
+  text-align: center;
+}
+
+.setup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin-top: 24px;
+}
